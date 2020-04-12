@@ -107,7 +107,7 @@ body {
 .header .main__header {
   width: 100%;
   min-height: 100vh;
-  background-image: url("/assets/img/mobile/7_1000px.webp");
+  background-image: url("../assets/img/mobile/7_1000px.webp");
   background-position: center;
   background-size: cover;
 }
