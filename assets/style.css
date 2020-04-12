@@ -10,7 +10,6 @@ body {
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
-  overflow-x: hidden;
 }
 
 .header {
@@ -237,13 +236,13 @@ body {
 .portfolio__section .portfolio__header {
   border-left: 1px solid #87005E;
   padding-left: 10px;
+  margin-bottom: 50px;
 }
 
 .portfolio__section .portfolio__header h2 {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.5rem;
-  letter-spacing: 2px;
 }
 
 .portfolio__section .portfolio__container {
@@ -264,10 +263,13 @@ body {
   background-position: center;
   background-size: cover;
   position: relative;
+  -webkit-box-shadow: 2px 2px 10px rgba(10, 10, 10, 0.6);
+          box-shadow: 2px 2px 10px rgba(10, 10, 10, 0.6);
+  text-decoration: none;
 }
 
 .portfolio__section .portfolio__container .container__item:nth-of-type(1) {
-  background-image: url("../assets/img/mobile/sesja-narzeczenska-we-wroclawiu-ostrow-tumsk-deptak-dunikowskiego_500px.webp");
+  background-image: url("../assets/img/mobile/sesja-narzeczenska-we-wroclawiu-ostrow-tumski-katedra-chrystusa-krola5_500px.webp");
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -279,8 +281,8 @@ body {
   left: -80px;
   content: "1";
   font-weight: 700;
-  font-size: 15rem;
-  opacity: 0.1;
+  font-size: 13rem;
+  opacity: 0.07;
 }
 
 .portfolio__section .portfolio__container .container__item:nth-of-type(2) {
@@ -294,8 +296,8 @@ body {
   right: -100px;
   content: "2";
   font-weight: 700;
-  font-size: 15rem;
-  opacity: 0.1;
+  font-size: 13rem;
+  opacity: 0.07;
 }
 
 .portfolio__section .portfolio__container .container__item:nth-of-type(3) {
@@ -311,8 +313,8 @@ body {
   left: -80px;
   content: "3";
   font-weight: 700;
-  font-size: 15rem;
-  opacity: 0.1;
+  font-size: 13rem;
+  opacity: 0.07;
 }
 
 .portfolio__section .portfolio__container .container__item .item__container {
@@ -338,5 +340,65 @@ body {
   font-size: 1rem;
   font-weight: 300;
   text-transform: capitalize;
+}
+
+.describe__section {
+  margin: 40px 20px 0 20px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.describe__section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100px;
+  height: 1px;
+  padding: 0.5px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #87005E;
+}
+
+.describe__section .describe__item {
+  margin: 30px 0;
+}
+
+.describe__section .describe__item h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding-left: 10px;
+  border-left: 1px solid #87005E;
+  margin-bottom: 20px;
+}
+
+.describe__section .describe__item p {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.footer {
+  margin-top: 60px;
+  width: 100%;
+  padding: 20px;
+  background-color: #3C4157;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #fefefe;
+  font-size: 0.8rem;
+}
+
+.footer h3, .footer h5 {
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */
