@@ -131,15 +131,17 @@ body {
 .header .main__header {
   width: 100%;
   min-height: 100vh;
-  background-image: url("../assets/img/mobile/7_1000px.webp");
-  background-position: center;
+  background-image: url("../assets/img/mobile/5.1_calepxjpg.jpg");
+  background-position: 55%;
   background-attachment: fixed;
   background-size: cover;
-  padding-top: 30%;
+  text-align: center;
+  padding-top: 100px;
 }
 
 .header .main__header .header__logo img {
-  width: 100%;
+  width: 300px;
+  margin: 0 auto;
 }
 
 .main__section {
@@ -301,7 +303,7 @@ body {
 }
 
 .portfolio__section .portfolio__container .container__item:nth-of-type(3) {
-  background-image: url("../assets/img/mobile/plenerslubny_dworzecpkpwroclaaw_500px.webp");
+  background-image: url("../assets/img/mobile/plenernarancho500px.webp");
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
