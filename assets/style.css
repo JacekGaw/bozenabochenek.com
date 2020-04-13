@@ -637,9 +637,43 @@ body {
   right: 0;
 }
 
+.text__container {
+  padding: 40px 15px;
+}
+
 .text__container .text__item {
   text-align: center;
   color: #efefef;
   font-size: 0.8rem;
+  margin: 10px 0;
+  position: relative;
+}
+
+.text__container .text__item:nth-of-type(1)::before, .text__container .text__item:last-of-type::before {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 1px;
+  background-color: #ddd;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.text__container .text__item:nth-of-type(1)::before {
+  top: -10px;
+}
+
+.text__container .text__item:last-of-type::before {
+  bottom: -10px;
+}
+
+.text__container .text__item ul {
+  list-style-type: none;
+}
+
+.text__container .text__item .text__link {
+  color: #ccccff;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */

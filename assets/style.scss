@@ -541,9 +541,36 @@ body {
     }
 }
 .text__container {
+    padding: 40px 15px;
     .text__item {
         text-align: center;
         color: #efefef;
         font-size: 0.8rem;
+        margin: 10px 0;
+        position: relative;
+
+        &:nth-of-type(1)::before, &:last-of-type::before {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 1px;
+            background-color: #ddd;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &:nth-of-type(1)::before {
+            top: -10px;
+        }
+        &:last-of-type::before {
+            bottom: -10px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+        .text__link {
+            color: #ccccff;
+            text-transform: uppercase;
+        }
     }
 }
