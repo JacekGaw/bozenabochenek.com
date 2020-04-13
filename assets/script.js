@@ -9,6 +9,38 @@ function toggleMenu(){
     hamburgerIcon.classList.toggle("hamburger__icon--close")
     menuContainer.classList.toggle("navigation--open");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // function getImageWidth() {
 //     for(let i=0; i<portfolioImages.length; i++){
 //         portfolioImages[i].offsetWidth = portfolioImages[i].style.width * 0.75;

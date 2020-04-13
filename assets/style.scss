@@ -12,6 +12,7 @@ body {
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
+    overflow-x: hidden;
 }
 
 .header {
@@ -37,8 +38,11 @@ body {
             justify-content: space-between;
             .icon__item {
                 width: 30px;
-                height: 4px;
+                height: 3px;
                 background-color: #111;
+            }
+            .icon__item--white {
+                background-color: #fefefe;
             }
         }
         // .hamburger__icon--close {
@@ -130,6 +134,60 @@ body {
                 width: 300px;
                 margin: 0 auto;
             }
+        }
+    }
+}
+.header--about {
+    width: 100%;
+    min-height: 0;
+    height: 70px;
+    background-color: $template_dark_color;
+    position: sticky;
+    z-index: 50;
+
+    .menu__hamburger {
+        top: 50%;
+        left: unset;
+        right: 5%;
+        transform: translateY(-50%);
+    }
+    .navigation {
+        height: 100vh;
+        left: 100%;
+        top: 0;
+        transition: 0.5s left;
+    }
+    .navigation--open {
+        height: 100vh;
+        top: 0;
+        left: 0;
+        transition: 0.5s left;
+    }
+
+    .back__button {
+        background-color: unset;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        border: unset;
+        display: flex;
+        align-items: center;
+
+        .back__icon {
+            width: 8px;
+            height: 8px;
+            border-left: 1px solid #fff;
+            border-top: 1px solid #fff;
+            transform: rotate(-45deg);
+        }
+        .back__text {
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            color: #fefefe;
+            margin-left: 8px;
         }
     }
 }
@@ -345,5 +403,147 @@ body {
     font-size: 0.8rem;
     h3,h5 {
         font-weight: 300;
+    }
+}
+
+//////////////////////////////// ABOUT //////////////////////////////
+.site__header {
+    text-align: center;
+    
+    .header__text {
+        font-size: 1rem;
+        padding: 50px 10px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 5px #888;
+    }
+}
+.container {
+    padding: 25px 15px;
+    
+    &--dark {
+        background-color: $template_dark_color;
+        padding: 25px 15px;
+    }
+}
+.about__container {
+    position: relative;
+    margin-top: 40px;
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 30px;
+
+    .about__photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 1px 1px 5px #888;
+    }
+    .about__text {
+        font-size: 0.9rem;
+        color: #fefefe;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+    .about__button {
+        background-color: unset;
+        border: unset;
+        color: #fefefe;
+        position: absolute;
+        display: flex;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px;
+        text-decoration: none;
+
+        .icon__down {
+            width: 9px;
+            height: 9px;
+            border-left: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            transform: rotate(-45deg);
+        }
+        h5 {
+            font-weight: 400;
+            font-size: 0.7rem;
+            margin: 0 10px;
+        }
+    }
+}
+.opinion__container {
+
+    h2 {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .opinions__slider {
+        min-height: 200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-top: 1px dashed #888;
+        border-bottom: 1px dashed #888;
+        width: 100%;
+        height: auto;
+        position: relative;
+
+        .opinion__text {
+            font-size: 0.8rem;
+            text-align: center;
+            margin: 15px 30px;
+        }
+        .opinion__author {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        .circles__box {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+            
+            .circle__item {
+                width: 8px;
+                height: 8px;
+                padding: 1px;
+                border: 1px solid #888;
+                border-radius: 50%;
+                margin: 0 5px;
+
+                &--fill {
+                    background-color: #888;
+                }
+            }
+        }
+        .slider__button {
+            position: absolute;
+            background-color: unset;
+            border: unset;
+            top: 50%;
+            width: 20px;
+            height: 30px;
+            font-weight: 700;
+            transform: translateY(-50%);
+
+            &--forward {
+                right: 0;
+            }
+        }
+    }
+}
+.text__container {
+    .text__item {
+        text-align: center;
+        color: #efefef;
+        font-size: 0.8rem;
     }
 }

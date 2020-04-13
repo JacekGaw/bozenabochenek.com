@@ -10,6 +10,7 @@ body {
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
+  overflow-x: hidden;
 }
 
 .header {
@@ -47,8 +48,12 @@ body {
 
 .header .menu__hamburger .hamburger__icon .icon__item {
   width: 30px;
-  height: 4px;
+  height: 3px;
   background-color: #111;
+}
+
+.header .menu__hamburger .hamburger__icon .icon__item--white {
+  background-color: #fefefe;
 }
 
 .header .navigation {
@@ -142,6 +147,74 @@ body {
 .header .main__header .header__logo img {
   width: 300px;
   margin: 0 auto;
+}
+
+.header--about {
+  width: 100%;
+  min-height: 0;
+  height: 70px;
+  background-color: #3C4157;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 50;
+}
+
+.header--about .menu__hamburger {
+  top: 50%;
+  left: unset;
+  right: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.header--about .navigation {
+  height: 100vh;
+  left: 100%;
+  top: 0;
+  -webkit-transition: 0.5s left;
+  transition: 0.5s left;
+}
+
+.header--about .navigation--open {
+  height: 100vh;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.5s left;
+  transition: 0.5s left;
+}
+
+.header--about .back__button {
+  background-color: unset;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header--about .back__button .back__icon {
+  width: 8px;
+  height: 8px;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header--about .back__button .back__text {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: #fefefe;
+  margin-left: 8px;
 }
 
 .main__section {
@@ -402,5 +475,171 @@ body {
 
 .footer h3, .footer h5 {
   font-weight: 300;
+}
+
+.site__header {
+  text-align: center;
+}
+
+.site__header .header__text {
+  font-size: 1rem;
+  padding: 50px 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px #888;
+}
+
+.container {
+  padding: 25px 15px;
+}
+
+.container--dark {
+  background-color: #3C4157;
+  padding: 25px 15px;
+}
+
+.about__container {
+  position: relative;
+  margin-top: 40px;
+  padding-top: 60px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.about__container .about__photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 1px 1px 5px #888;
+          box-shadow: 1px 1px 5px #888;
+}
+
+.about__container .about__text {
+  font-size: 0.9rem;
+  color: #fefefe;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.about__container .about__button {
+  background-color: unset;
+  border: unset;
+  color: #fefefe;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 5px;
+  text-decoration: none;
+}
+
+.about__container .about__button .icon__down {
+  width: 9px;
+  height: 9px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.about__container .about__button h5 {
+  font-weight: 400;
+  font-size: 0.7rem;
+  margin: 0 10px;
+}
+
+.opinion__container h2 {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.opinion__container .opinions__slider {
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 1px dashed #888;
+  border-bottom: 1px dashed #888;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.opinion__container .opinions__slider .opinion__text {
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 15px 30px;
+}
+
+.opinion__container .opinions__slider .opinion__author {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.opinion__container .opinions__slider .circles__box {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.opinion__container .opinions__slider .circles__box .circle__item {
+  width: 8px;
+  height: 8px;
+  padding: 1px;
+  border: 1px solid #888;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.opinion__container .opinions__slider .circles__box .circle__item--fill {
+  background-color: #888;
+}
+
+.opinion__container .opinions__slider .slider__button {
+  position: absolute;
+  background-color: unset;
+  border: unset;
+  top: 50%;
+  width: 20px;
+  height: 30px;
+  font-weight: 700;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.opinion__container .opinions__slider .slider__button--forward {
+  right: 0;
+}
+
+.text__container .text__item {
+  text-align: center;
+  color: #efefef;
+  font-size: 0.8rem;
 }
 /*# sourceMappingURL=style.css.map */

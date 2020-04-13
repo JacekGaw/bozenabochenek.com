@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<header class="header header--about" id="header">
+    <button class="menu__hamburger menu__hamburger--" id="hamburgerButton">
+        <i class="hamburger__icon" id="hamburgerIcon">
+            <div class="icon__item icon__item--white"></div>
+            <div class="icon__item icon__item--white"></div>
+            <div class="icon__item icon__item--white"></div>
+        </i>
+    </button>
+    <nav class="navigation" id="menu">
+        <ul class="navigation__list">
+            <li class="list__element"><a href="" class="element__link">strona główna</a></li>
+            <li class="list__element" id="menuDropdown"><a href="" class="element__link">portfolio</a>
+                <nav>
+                    <ul class="second__list">
+                        <li class="list__element"><a href="" class="element__link">sesja narzeczeńska</a></li>
+                        <li class="list__element"><a href="" class="element__link">fotografia ślubna</a></li>
+                        <li class="list__element"><a href="" class="element__link">plener ślubny</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li class="list__element"><a href="" class="element__link">o mnie</a></li>
+            <li class="list__element"><a href="" class="element__link">oferta</a></li>
+            <li class="list__element"><a href="" class="element__link">darmowa sesja narzeczeńska</a></li>
+            <li class="list__element"><a href="" class="element__link">kontakt</a></li>
+        </ul>
+        <div class="media__container">
+                <a href="" class="media__link">facebook</a>
+                <a href="" class="media__link">instagram</a>
+        </div>
+    </nav>
+    <button class="back__button">
+        <i class="back__icon"></i>
+        <h3 class="back__text">strona główna</h3>
+    </button>
+</header>
+<main>
+    <header class="site__header">
+        <h1 class="header__text">witaj na mojej stronie<br>fotografa ślubnego z wrocławia!</h1>
+    </header>
+    <section class="container--dark about__container">
+        <img src="/assets/img/avatar.jpg" alt="Fotograf Bożena Bochenek" class="about__photo">
+        <h5 class="about__text">Nazywam się Bożena Bochenek, jestem dyplomowanym fotografem z wieloletnim doświadczeniem.</h5>
+        <h5 class="about__text">Bardzo mi miło, że mogę gościć państwa w moim fotograficznym świecie!</h5>
+        <a href="#aboutDesc" class="about__button">
+            <i class="icon__down"></i>
+            <h5>przeczytaj więcej</h5>
+            <i class="icon__down"></i>
+        </a>
+    </section>
+    <section class="container opinion__container">
+        <h2>opinie klientów</h2>
+        <section class="opinions__slider">
+            <button class="slider__button slider__button--back" aria-label="Button back" id="buttonBack"><</button>
+            <button class="slider__button slider__button--forward" aria-label="Button forward" id="buttonForward">></button>
+            <div class="opinion__text" id="opinionText"></div>
+            <div class="opinion__author" id="opinionAuthor"></div>
+            <div class="circles__box" id="circlesBox"></div>
+        </section>
+    </section>
+    <section class="container--dark text__container">
+        <div class="text__item"><p>W swojej pracy zawodowej realizowałam sesje ślubne, biznesowe, fotografię portretową i różne projekty okolicznościowe.</p></div>
+        <div class="text__item"><p>Światło i człowiek stanowią dla mnie najważniejsze elementy fotografii. Wartością, którą cenię w mojej pracy najbardziej jest kontakt z klientem, dlatego zwracam uwagę na dobre relacje, pozytywne emocje i otwartość, dzięki czemu zdjęcia, które robię są naturalne i pełne Waszych emocji.</p></div>
+        <div class="text__item"><p>Pracuję na lustrzankach cyfrowych z linii profesjonalnych, szczególnie zaufałam marce Canon.</p></div>
+        <div class="text__item"><p>Doskonalę swój warsztat przez regularny udział w szkoleniach branżowych w Polsce i za granicą pracując nie tylko nad warsztatem technicznym ale i poznając najnowsze fotograficzne trendy. Odbyłam liczne szkolenia m. in. w zakresie z fotografii reportażowej, krajobrazowej, sensualnej, pracy z modelem czy ciemni fotograficznej.</p></div>
+        <div class="text__item"><p>Bardzo lubię pracować zarówno w studio fotograficznym, w plenerze czy w terenie. Różnorodność miejsc, modeli i rodzajów sesji, które układają się w ciągu roku sezonowo zapewnia mi świeżość spojrzenia i brak rutyny, co w tym zawodzie jest niezwykle ważne.</p></div>
+        <div class="text__item"><p>Mam nadzieję, że niebawem zobaczę Cię po drugiej stronie mojego aparatu!</p></div>
+        <div class="text__item">
+            <p>Moja fotografia w liczbach</p>
+            <ul>
+                <li>10 lat doświadczenia w zawodzie</li>
+                <li>ponad 100 sfotografowanych Młodych Par</li>
+                <li>ponad 250 sesji innego rodzaju (m.in. narzeczeńśkich, rodzinnych, dziecięcych, portretowych, kobiecych)</li>
+                <li>ponad 100 plenerów ślubnych w kraju i za granicą</li>
+            </ul>
+        </div>
+        <div class="text__item"><p>Z moich usług skorzystało już wiele osób sprawdź ich opinie zamieszczone powyżej!</p></div>
+        <div class="text__item"><p>Więcej o szczegółach mojej pracy znajdziecie w zakładkach: <a href="#" class="text__link">sesja narzeczeńska</a> <a href="#" class="text__link">fotografia ślubna</a> <a href="#" class="text__link">plener ślubny</a>.</p></div>
+        <div class="text__item"><p>Mieszkam we Wrocłąwiu ale fotografując śluby podróżuję po całej Polsce i dalej...</p></div>
+    </section>
+</main>
+<footer class="footer">
+    <h3>Bożena Bochenek STUDIO FOTOGRAFICZNE</h3>
+    <h5>foto@bozenabochenek.com</h5>
+    <h5>606 36 46 17</h5>
+</footer>
+
+<script src="/assets/script.js"></script>
+<script src="/assets/opinionsSlider.js"></script>
+</body>
+</html>
