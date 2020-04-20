@@ -17,16 +17,16 @@ body {
 .navigation {
     z-index: 5;
     position: absolute;
-    top: -100%;
+    bottom: 100%;
     left: 0;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #ddd;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: 0.5s top;
+    transition: 0.5s bottom;
 
     &__list {
         list-style-type: none;
@@ -71,8 +71,8 @@ body {
     }
 }
 .navigation--open {
-    top: 0;
-    transition: 0.5s top;
+    bottom: 0;
+    transition: 0.5s bottom;
 }
 .header {
     width: 100%;
@@ -150,23 +150,6 @@ body {
         left: unset;
         right: 5%;
         transform: translateY(-50%);
-    }
-    .navigation {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        left: 100%;
-        top: 0;
-        transition: 0.5s left;
-
-    }
-    .navigation--open {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        transition: 0.5s left;
     }
 
     .back__button {
@@ -371,14 +354,14 @@ body {
     
     &::before {
         content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 50%;
-                    width: 100px;
-                    height: 1px;
-                    padding: 0.5px;
-                    transform: translateX(-50%);
-                    background-color: $template_purple_color;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100px;
+        height: 1px;
+        padding: 0.5px;
+        transform: translateX(-50%);
+        background-color: $template_purple_color;
     }
     .describe__item {
         margin: 30px 0;
@@ -422,6 +405,24 @@ body {
         font-weight: 400;
         text-transform: uppercase;
         text-shadow: 1px 1px 5px #888;
+    }
+    .header__description {
+        font-weight: 300;
+        padding: 0 10px;
+        font-size: 0.9rem;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            width: 100px;
+            height: 1px;
+            padding: 0.5px;
+            transform: translateX(-50%);
+            background-color: $template_purple_color;
+        }
     }
 }
 .container {
@@ -578,5 +579,74 @@ body {
             color: #ccccff;
             text-transform: uppercase;
         }
+    }
+}
+//////////////////////offer/////////////////////
+.offer__container {
+
+    .offer__item {
+        width: 100%;
+        background-color: #fefefe;
+        display: flex;
+        margin: 50px 0;
+        justify-content: flex-start;
+        position: relative;
+        background-image: url('/assets/img/mobile/plenernarancho500px.webp');
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 70% auto;
+        padding-top: 140px;
+
+        // &::before {
+        //     position: absolute;
+        //     content: '';
+        //     background-image: url('/assets/img/mobile/plenernarancho500px.webp');
+        //     width: 200px;
+        //     padding: 0;
+        //     height: 120px;
+        //     background-size: cover;
+        //     top: -20px;
+        //     left: 0px;
+        //     z-index: 1;
+        // }
+
+        .item__description {
+            width: 80%;
+            background-color: #fefefe;
+            padding: 15px;
+            box-shadow: 0 0 10px rgb(66, 65, 65);
+            z-index: 5;
+
+            .item__header {
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                padding-bottom: 15px;
+            }
+            p{
+                font-size: 1rem;
+            }
+            ul {
+                padding-left: 10px;
+                li {
+                    list-style: "-";
+                    padding-left: 5px;
+                    font-size: 0.9rem;
+                }
+            }
+            .item__price {
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                padding-top: 15px;
+            }
+        }
+    }
+    .offer__item--right {
+        justify-content: flex-end;
+        background-image: url('/assets/img/mobile/plenernarancho500px.webp');
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: 70% auto;
+        padding-bottom: 140px;
+        padding-top: 0;
     }
 }
