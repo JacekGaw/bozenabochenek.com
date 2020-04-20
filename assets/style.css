@@ -692,7 +692,6 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   position: relative;
-  background-image: url("/assets/img/mobile/plenernarancho500px.webp");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 70% auto;
@@ -738,7 +737,6 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-image: url("/assets/img/mobile/plenernarancho500px.webp");
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: 70% auto;
