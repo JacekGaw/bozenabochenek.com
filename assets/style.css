@@ -14,7 +14,7 @@ body {
 }
 
 .navigation {
-  z-index: 5;
+  z-index: 1000;
   position: absolute;
   bottom: 100%;
   left: 0;
@@ -105,7 +105,7 @@ body {
   border: none;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  z-index: 10;
+  z-index: 1001;
 }
 
 .header .menu__hamburger .hamburger__icon {
@@ -742,5 +742,111 @@ body {
   background-size: 70% auto;
   padding-bottom: 140px;
   padding-top: 0;
+}
+
+.offer__container h5 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.offer__container ul {
+  list-style: "- ";
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+.offer__container ul li {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.offer__container .offer__text {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.offer__container .offer__button {
+  border: 2px solid #87005E;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 15px;
+  color: #444;
+  margin: 0 auto;
+  -webkit-transition: 0.3s background-color, 0.3s color;
+  transition: 0.3s background-color, 0.3s color;
+}
+
+.offer__container .offer__button:hover {
+  -webkit-transition: 0.3s background-color, 0.3s color;
+  transition: 0.3s background-color, 0.3s color;
+  color: #eee;
+  background-color: #87005E;
+}
+
+.gallery {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery .gallery__button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  z-index: 10000;
+  display: none;
+}
+
+.gallery .gallery__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33%;
+          flex: 0 1 33%;
+}
+
+.gallery .gallery__item .item__photo--square {
+  width: 100%;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery .gallery__item .photo__box {
+  display: none;
+}
+
+.gallery .gallery__item .photo__box .item__photo--full {
+  width: 90%;
+  height: auto;
+}
+
+.gallery .gallery__item .photo__box--open {
+  z-index: 5000;
+  position: fixed;
+  background-color: rgba(10, 10, 10, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
