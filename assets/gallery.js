@@ -18,7 +18,7 @@ function openGallery(){
 };
 
 imageSquares.forEach((element, id) => {
-    element.style.backgroundImage = `url('/assets/img/plener_slubny/plener_slubny${id}.jpg')`;
+    element.style.backgroundImage = `url('https://jacekgaw.github.io/bozenabochenek.com/assets/img/plener_slubny/plener_slubny${id}.jpg')`;
     element.addEventListener('click',openGallery);
 });
 
