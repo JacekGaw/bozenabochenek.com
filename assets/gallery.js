@@ -24,7 +24,10 @@ imageSquares.forEach((element, id) => {
             break;
         case `Sesja Narzeczeńska`:
             element.style.backgroundImage = `url('https://jacekgaw.github.io/bozenabochenek.com/assets/img/mobile/sesja_narzeczenska/sesja_narzeczenska${id}.jpg')`;
-
+            break;
+        case `Fotografia Ślubna`:
+            element.style.backgroundImage = `url('https://jacekgaw.github.io/bozenabochenek.com/assets/img/mobile/sesja_narzeczenska/sesja_narzeczenska${id}.jpg')`;
+            break;
     }
     element.addEventListener('click',openGallery);
 });
