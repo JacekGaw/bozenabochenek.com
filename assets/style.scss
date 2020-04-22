@@ -692,14 +692,19 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 50px 0;
 
     .gallery__button {
         position: fixed;
-        top: 0;
-        right: 0;
+        top: 2%;
+        right: 2%;
         padding: 15px;
         z-index: 10000;
         display: none;
+        color: #fff;
+        font-weight: 700;
+        background-color: #444;
+        border: unset;
     }
     .gallery__item {
         flex: 0 1 33%;
@@ -713,14 +718,14 @@ body {
         .photo__box {
             display: none;
             .item__photo--full {
-                width: 90%;
-                height: auto;
+                max-width: 95%;
+                max-height: 95%;
             }
         }
         .photo__box--open {
             z-index: 5000;
             position: fixed;
-            background-color: rgba(10,10,10,0.7);
+            background-color: rgba(10,10,10,0.8);
             top:0;
             left: 0;
             width: 100%;
@@ -729,6 +734,41 @@ body {
             justify-content: center;
             align-items: center;
             display: none;
+        }
+    }
+}
+.facebook__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .facebook__button {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        border-left: 1px solid $template_purple_color;
+        border-right: 1px solid $template_purple_color;
+        padding: 10px;
+
+        .facebook__icon {
+            width: 50px;
+        }
+        h6 {
+            font-size: 0.9rem;
+            color: #444;
+            font-weight: 400;
+        }
+    }
+}
+.site__desc {
+    p {
+        font-size: 0.9rem;
+        margin: 10px 0;
+    }
+    ul {
+        margin-left: 20px;
+        li {
+            font-size: 0.9rem;
         }
     }
 }
