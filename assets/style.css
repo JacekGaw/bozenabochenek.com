@@ -780,6 +780,12 @@ body {
   transition: 0.3s background-color, 0.3s color;
 }
 
+.offer__container .offer__button--small {
+  font-size: 0.9rem;
+  padding: 10px;
+  margin-top: 20px;
+}
+
 .offer__container .offer__button:hover {
   -webkit-transition: 0.3s background-color, 0.3s color;
   transition: 0.3s background-color, 0.3s color;

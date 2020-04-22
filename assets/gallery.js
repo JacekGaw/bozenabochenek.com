@@ -26,7 +26,7 @@ imageSquares.forEach((element, id) => {
             element.style.backgroundImage = `url('https://jacekgaw.github.io/bozenabochenek.com/assets/img/mobile/sesja_narzeczenska/sesja_narzeczenska${id}.jpg')`;
             break;
         case `Fotografia Ślubna`:
-            element.style.backgroundImage = `url('https://jacekgaw.github.io/bozenabochenek.com/assets/img/mobile/sesja_narzeczenska/sesja_narzeczenska${id}.jpg')`;
+            element.style.backgroundImage = `url('https://jacekgaw.github.io/bozenabochenek.com/assets/img/mobile/fotografia_slubna/fotografia_slubna${id}.jpg')`;
             break;
     }
     element.addEventListener('click',openGallery);
