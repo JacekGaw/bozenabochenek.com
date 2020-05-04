@@ -49,7 +49,10 @@ body {
         }
         #menuDropdown {
             .second__list {
-                display: none;
+                display: block;
+                &--close {
+                    display: none;
+                }
             }
         }
     }

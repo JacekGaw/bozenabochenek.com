@@ -60,6 +60,10 @@ body {
 }
 
 .navigation__list #menuDropdown .second__list {
+  display: block;
+}
+
+.navigation__list #menuDropdown .second__list--close {
   display: none;
 }
 
