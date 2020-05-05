@@ -910,4 +910,55 @@ body {
 .site__desc ul li {
   font-size: 0.9rem;
 }
+
+.freephoto__container .container__header {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.freephoto__container .freephoto__text {
+  padding: 20px;
+}
+
+.freephoto__container .freephoto__text p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #444;
+}
+
+.freephoto__container .lists__container h3 {
+  font-size: 1.3rem;
+}
+
+.freephoto__container .lists__container .list__container {
+  padding: 20px;
+}
+
+.freephoto__container .lists__container .list__container h4 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.freephoto__container .lists__container .list__container .list li {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.freephoto__container .lists__container .list__container .list--second {
+  padding-left: 20px;
+}
+
+.freephoto__container .lists__container .list__container .list--second li {
+  font-weight: 300;
+}
+
+.freephoto__container .lists__container .list__container .list--third {
+  padding-left: 20px;
+}
+
+.freephoto__container .lists__container .list__container .list--third li {
+  font-size: 0.9rem;
+}
 /*# sourceMappingURL=style.css.map */

@@ -781,3 +781,51 @@ body {
         }
     }
 }
+
+//////////////////////////darmowa sesja narzeczenska/////////////
+.freephoto__container {
+    .container__header {
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    .freephoto__text {
+        padding: 20px;
+        p {
+            font-size: 0.9rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: #444;
+        }
+    }
+    .lists__container {
+        h3 {
+            font-size: 1.3rem;
+        }
+        .list__container {
+            padding: 20px;
+            h4 {
+                font-size: 1.1rem;
+                text-transform: uppercase;
+            }
+            .list {
+                li {
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+                &--second {
+                    padding-left: 20px;
+                    li {
+                        font-weight: 300;
+                    }
+                }
+                &--third {
+                    padding-left: 20px;
+                    li {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
