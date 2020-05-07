@@ -113,8 +113,16 @@ body {
   }
   .navigation--main .navigation__list .list__element .element__link {
     color: #fefefe;
+  }
+}
+
+@media (min-width: 1200px) and (min-width: 1900px) {
+  .navigation--main .navigation__list .list__element .element__link {
     font-size: 1.1rem;
   }
+}
+
+@media (min-width: 1200px) {
   .navigation--main .navigation__list .list__element .second__list {
     list-style-type: none;
   }
@@ -125,8 +133,17 @@ body {
     display: block;
   }
   .navigation--main .navigation__header .header__logo img {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1200px) and (min-width: 1900px) {
+  .navigation--main .navigation__header .header__logo img {
     width: 400px;
   }
+}
+
+@media (min-width: 1200px) {
   .navigation--main .media__container {
     -webkit-box-pack: start;
         -ms-flex-pack: start;

@@ -96,7 +96,9 @@ body {
                 padding-left: 15%;
                 .element__link {
                     color: #fefefe;
-                    font-size: 1.1rem;
+                    @media (min-width: 1900px){
+                        font-size: 1.1rem;
+                    }
                 }
                 .second__list {
                     list-style-type: none;
@@ -110,7 +112,10 @@ body {
             display: block;
             .header__logo {
                 img {
-                    width: 400px;
+                    width: 300px;
+                    @media (min-width: 1900px) {
+                        width: 400px;
+                    }
                 }
             }
         }
