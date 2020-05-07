@@ -28,6 +28,10 @@ body {
     justify-content: center;
     transition: 0.5s bottom;
 
+    &__header {
+        display: none;
+    }
+
     &__list {
         list-style-type: none;
         width: 100%;
@@ -72,10 +76,60 @@ body {
         font-size: 0.9rem;
         }
     }
+
 }
 .navigation--open {
     bottom: 0;
     transition: 0.5s bottom;
+}
+@media (min-width: 1200px){
+    .navigation--main {
+        bottom: 0;
+        width: 50%;
+        background-color: unset;
+        background-image: linear-gradient(to right, rgba(10,10,10,0.7), rgba(10,10,10,0));
+
+        .navigation__list {
+            .list__element {
+                text-align: left;
+                color: #fefefe;
+                padding-left: 15%;
+                .element__link {
+                    color: #fefefe;
+                    font-size: 1.1rem;
+                }
+                .second__list {
+                    list-style-type: none;
+                }
+            }
+        }
+        .navigation__header {
+            position: absolute;
+            top: 5%;
+            left: 15%;
+            display: block;
+            .header__logo {
+                img {
+                    width: 400px;
+                }
+            }
+        }
+        .media__container {
+            // flex-direction: column;
+            justify-content: flex-start;
+            margin: 5% 15%;
+
+            .media__link {
+                width: 200px;
+                padding: 10px;
+                text-align: center;
+                color: #fefefe;
+                border: 2px solid #fefefe;
+                text-decoration: underline;
+                margin: 0 10px;
+            }
+        }
+    }
 }
 .header {
     width: 100%;
@@ -91,6 +145,11 @@ body {
         border: none;
         transform: translateX(-50%);
         z-index: 1001;
+        @media (min-width: 1200px){
+            &--main {
+                display: none;
+            }
+        }
 
         .hamburger__icon {
             width: 30px;
@@ -131,11 +190,19 @@ body {
         background-size: cover;
         text-align: center;
         padding-top: 100px;
+        @media (min-width:1200px){
+            background-image: url("../assets/img/bozena_bochenek_main.jpg");
+            text-align: left;
+            padding: 50px 7%;
+        }
 
         .header__logo {
             img {
                 width: 300px;
                 margin: 0 auto;
+                @media (min-width: 1200px) {
+                    display: none;
+                }
             }
         }
     }
@@ -193,6 +260,10 @@ body {
         padding: 5px;
         background-color: #fff;
         transform: translateY(-100px);
+        @media (min-width: 1200px){
+            transform: none;
+            margin: 5% auto;
+        }
 
         .section__header {
             height: 100px;
@@ -323,7 +394,7 @@ body {
                     z-index: 0;
                     position: absolute;
                     top: -110px;
-                    right: -100px;
+                    right: -70px;
                     content: "2";
                     font-weight: 700;
                     font-size: 13rem;
@@ -414,14 +485,14 @@ body {
             border-left: 1px solid $template_purple_color;
             margin-bottom: 20px;
             @media (min-width:1200px){
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
         }
         p {
             font-weight: 300;
             font-size: 0.8rem;
             @media (min-width:1200px){
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
         }
     }

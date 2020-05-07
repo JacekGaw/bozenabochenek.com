@@ -38,6 +38,10 @@ body {
   transition: 0.5s bottom;
 }
 
+.navigation__header {
+  display: none;
+}
+
 .navigation__list {
   list-style-type: none;
   width: 100%;
@@ -94,6 +98,52 @@ body {
   transition: 0.5s bottom;
 }
 
+@media (min-width: 1200px) {
+  .navigation--main {
+    bottom: 0;
+    width: 50%;
+    background-color: unset;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(10, 10, 10, 0.7)), to(rgba(10, 10, 10, 0)));
+    background-image: linear-gradient(to right, rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0));
+  }
+  .navigation--main .navigation__list .list__element {
+    text-align: left;
+    color: #fefefe;
+    padding-left: 15%;
+  }
+  .navigation--main .navigation__list .list__element .element__link {
+    color: #fefefe;
+    font-size: 1.1rem;
+  }
+  .navigation--main .navigation__list .list__element .second__list {
+    list-style-type: none;
+  }
+  .navigation--main .navigation__header {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    display: block;
+  }
+  .navigation--main .navigation__header .header__logo img {
+    width: 400px;
+  }
+  .navigation--main .media__container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 5% 15%;
+  }
+  .navigation--main .media__container .media__link {
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    color: #fefefe;
+    border: 2px solid #fefefe;
+    text-decoration: underline;
+    margin: 0 10px;
+  }
+}
+
 .header {
   width: 100%;
   min-height: 100vh;
@@ -110,6 +160,12 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 1001;
+}
+
+@media (min-width: 1200px) {
+  .header .menu__hamburger--main {
+    display: none;
+  }
 }
 
 .header .menu__hamburger .hamburger__icon {
@@ -148,9 +204,23 @@ body {
   padding-top: 100px;
 }
 
+@media (min-width: 1200px) {
+  .header .main__header {
+    background-image: url("../assets/img/bozena_bochenek_main.jpg");
+    text-align: left;
+    padding: 50px 7%;
+  }
+}
+
 .header .main__header .header__logo img {
   width: 300px;
   margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .header .main__header .header__logo img {
+    display: none;
+  }
 }
 
 .header--about {
@@ -218,6 +288,14 @@ body {
   background-color: #fff;
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
+}
+
+@media (min-width: 1200px) {
+  .main__section .section__container {
+    -webkit-transform: none;
+            transform: none;
+    margin: 5% auto;
+  }
 }
 
 .main__section .section__container .section__header {
@@ -387,7 +465,7 @@ body {
   z-index: 0;
   position: absolute;
   top: -110px;
-  right: -100px;
+  right: -70px;
   content: "2";
   font-weight: 700;
   font-size: 13rem;
@@ -510,7 +588,7 @@ body {
 
 @media (min-width: 1200px) {
   .describe__section .describe__item h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -521,7 +599,7 @@ body {
 
 @media (min-width: 1200px) {
   .describe__section .describe__item p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
