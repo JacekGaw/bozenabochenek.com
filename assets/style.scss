@@ -257,25 +257,77 @@ body {
 }
 .main__section {
     width: 100%;
+    @media (min-width: 1200px){
+        padding: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .slider__container {
+        flex: 0 1 50%;
+        height: auto;
+        box-shadow: 1px 1px 30px rgba(10,10,10,0.5);
+        @media (min-width: 1200px){
+            flex: 0 1 70%;
+        }
+        @media (min-width: 1400px){
+            flex: 0 1 60%;
+        }
+        @media (min-width: 2000px){
+            flex: 0 1 50%;
+        }
+        .slider__image {
+            width: 100%;
+            height: 100%;
+            .image {
+                width: 100%;
+                height: auto;
+                display: none;
+                // &:first-of-type {
+                //     display: block;
+                // }
+            }
+        }
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
 
     .section__container {
         margin: 0 auto;
         width: 90%;
-        box-shadow: 1px 1px 10px #444;
+        box-shadow: 1px 1px 30px rgba(10,10,10,0.3);
         padding: 5px;
         background-color: #fff;
         transform: translateY(-100px);
         @media (min-width: 1200px){
+            width: 100%;
+            flex: 0 1 30%;
             transform: none;
-            margin: 5% auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0;
+            margin-right: 2%;
+            box-shadow: none;
         }
-
+        @media (min-width: 1600px){
+            flex: 0 1 30%;
+            margin-right: 5%;
+        }
+        @media (min-width: 2000px){
+            flex: 0 1 25%;
+            margin-right: 10%;
+        }
         .section__header {
             height: 100px;
             padding-top: 10px;
-            margin-bottom: 40px;
-            text-align: center;
+            margin-bottom: 5%;
+            text-align: left;
             text-transform: uppercase;
+            margin-left: 30px;
+            width: 100%;
 
             h1 {
                 padding-top: 10px;
@@ -283,6 +335,12 @@ body {
                 font-size: 1.4rem;
                 font-weight: 400;
                 text-shadow: 1px 1px 5px rgba(10,10,10,0.5);
+                @media (min-width: 1600px){
+                    font-size: 1.5rem;
+                }
+                @media (min-width: 1900px){
+                    font-size: 2.2rem;
+                }
 
                 &::before {
                     content: '';
@@ -299,6 +357,12 @@ body {
             h3 {
                 font-size: 0.8rem;
                 font-weight: 300;
+                @media (min-width: 1600px){
+                    font-size: 1.1rem;
+                }
+                @media (min-width: 1900px){
+                    font-size: 1.7rem;
+                }
             }
         }
         .section__text {
@@ -327,11 +391,23 @@ body {
             h5 {
                 font-weight: 400;
                 font-size: 0.9rem;
+                @media (min-width: 1600px){
+                    font-size: 1.1rem;
+                }
+                @media (min-width: 1900px){
+                    font-size: 1.3rem;
+                }
             }
             p {
                 font-weight: 300;
                 font-size: 0.9rem;
                 margin: 10px 0;
+                @media (min-width: 1600px){
+                    font-size: 1.1rem;
+                }
+                @media (min-width: 1900px){
+                    font-size: 1.3rem;
+                }
             }
         }
     }
@@ -406,7 +482,7 @@ body {
                     opacity: 0.07;
                     @media (min-width: 700px){
                         font-size: 24rem;
-                        left: -160px;
+                        right: -160px;
                     }
                 }
             }
@@ -802,7 +878,7 @@ body {
             width: 80%;
             background-color: #fefefe;
             padding: 15px;
-            box-shadow: 0 0 10px rgb(66, 65, 65);
+            box-shadow: 0 0 10px rgba(66, 65, 65,0.3);
             z-index: 5;
             @media (min-width: 700px){
                 width: 100%;

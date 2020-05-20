@@ -1,5 +1,3 @@
-const buttonBack = document.querySelector('#buttonBack');
-const buttonForward = document.querySelector('#buttonForward');
 const opinionText = document.querySelector('#opinionText');
 const opinionAuthor = document.querySelector('#opinionAuthor');
 const circlesBox = document.querySelector('#circlesBox');
@@ -60,24 +58,4 @@ const createSlider = () => {
     }, 5000);
 };
 
-/////// dorobić sterowanie strzałkami
-const changeSlider = (direction) => {
-    const circles = document.querySelectorAll('.circle__item');
-    if(direction == "forward"){
-        let id = document.querySelector('.circle__item--fill').id;  
-        if(id != circles.length-1){
-            opinionText.innerHTML = '"' + opinions[id+1].text + '"';
-            opinionAuthor.innerHTML = opinions[+1].author;
-        }
-        // else
-        //     // console.log("not ok")
-    }
-};
-
 window.addEventListener('load', createSlider);
-buttonBack.addEventListener('click', function(){
-    changeSlider("back");
-});
-buttonForward.addEventListener('click', function(){
-    changeSlider("forward");
-});
